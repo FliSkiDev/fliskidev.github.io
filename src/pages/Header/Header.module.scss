@@ -1,0 +1,146 @@
+.Container {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px #aaaaaa solid;
+}
+
+.Item {
+  color: #0d102b;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition: 0.2s;
+  &:hover {
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+  }
+}
+
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Text {
+  margin-right: 5px;
+}
+
+.animationMenu {
+  transition: 0.4s;
+}
+
+.tooltipItem {
+  position: relative;
+  display: inline-block;
+  color: #0d102b;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition: 0.2s;
+  &:hover {
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+  }
+}
+
+.ToolTip {
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  width: 175px;
+  height: 115px;
+  top: 100%;
+  left: 50%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-left: -95px;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 5px;
+  transition: 0.2s;
+}
+
+.textToolTip {
+  color: #0d102b;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  transition: 0.2s;
+  &:hover {
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+  }
+}
+
+.iconToolTip {
+  margin-right: 5px;
+}
+
+.iconMenu {
+  cursor: pointer;
+}
+
+.iconMenuX {
+  // Close
+  cursor: pointer;
+  display: none;
+}
+
+.menuButtons {
+  display: none;
+}
+
+.Menu {
+  z-index: 1;
+  visibility: hidden;
+  opacity: 1;
+  width: 98%;
+  height: 130px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 6px;
+  top: 117px;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 650px) {
+  .Content {
+    display: none;
+  }
+  .menuButtons {
+    display: flex;
+  }
+  .Menu {
+    display: flex;
+  }
+}

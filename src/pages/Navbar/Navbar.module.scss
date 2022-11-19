@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap");
+
+.Container {
+  background-color: #f2f2f7;
+  height: 5vh;
+  width: 100%;
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Text {
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #0d102b;
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    color: rgb(29, 33, 56);
+  }
+}
+
+.Content {
+  margin-right: 250px;
+}
+
+@media only screen and (max-width: 800px) {
+  .Content {
+    margin-right: 0;
+  }
+  .Container {
+    justify-content: center;
+  }
+}
