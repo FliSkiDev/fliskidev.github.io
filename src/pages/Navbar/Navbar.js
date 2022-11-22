@@ -4,13 +4,13 @@ function App() {
   return (
     <div className={styles.Container}>
       <div className={styles.Content}>
-        <a href="/#" className={styles.Text}>
+        <a href="/socialmedia" className={styles.Text}>
           Social Media
         </a>
-        <a href="/#" className={styles.Text}>
+        <a href="/help" className={styles.Text}>
           Pomoc
         </a>
-        <a href="/#" className={styles.Text}>
+        <a href="/login" className={styles.Text}>
           Zaloguj się
         </a>
       </div>

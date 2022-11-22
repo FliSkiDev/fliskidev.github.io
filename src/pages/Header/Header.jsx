@@ -77,6 +77,8 @@ function Header() {
           <span className={styles.Text}>Projekty</span>
           <span id="ToolTip" className={styles.ToolTip}>
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/FliSkiDev/PlaneRadar"
               className={styles.textToolTip}
             >
@@ -90,6 +92,8 @@ function Header() {
               PlaneRadar
             </a>
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/FliSkiDev/PlaneAPI"
               className={styles.textToolTip}
             >
@@ -103,7 +107,9 @@ function Header() {
               PlaneAPI
             </a>
             <a
-              href="https://github.com/FliSkiDev/dev  PlaneRadar"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/FliSkiDev/plane-radar-dev"
               className={styles.textToolTip}
             >
               <Icon
@@ -124,19 +130,36 @@ function Header() {
             height="24"
           />
         </a>
-        <a href="/#" className={styles.Item}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="/dokumentacja"
+          className={styles.Item}
+        >
           <span className={styles.Text}>Dokumentacja</span>
         </a>
-        <a href="/#" className={styles.Item}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="/cena"
+          className={styles.Item}
+        >
           <span className={styles.Text}>Cena</span>
         </a>
-        <a href="/#" className={styles.Item}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/FliSkiDev"
+          className={styles.Item}
+        >
           <span className={styles.Text}>Github</span>
           <Icon icon="eva:external-link-outline" width="24" height="24" />
         </a>
       </div>
       <div id="mobileMenu" className={styles.Menu}>
         <a
+          target="_blank"
+          rel="noreferrer"
           onClick={projectMenu}
           href="https://github.com/FliSkiDev"
           className={styles.tooltipItem}
@@ -149,13 +172,18 @@ function Header() {
             height="24"
           />
         </a>
-        <a href="/#" className={styles.Item}>
+        <a target="_blank" rel="noreferrer" href="/#" className={styles.Item}>
           <span className={styles.Text}>Dokumentacja</span>
         </a>
-        <a href="/#" className={styles.Item}>
+        <a target="_blank" rel="noreferrer" href="/#" className={styles.Item}>
           <span className={styles.Text}>Cena</span>
         </a>
-        <a href="/#" className={styles.Item}>
+        <a
+          rel="noreferrer"
+          href="https://github.com/FliSkiDev"
+          target="_blank"
+          className={styles.Item}
+        >
           <span className={styles.Text}>Github</span>
           <Icon icon="eva:external-link-outline" width="24" height="24" />
         </a>
